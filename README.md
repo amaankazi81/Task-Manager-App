@@ -1,4 +1,4 @@
-## Task Manager App
+# Task Manager App
 
 A full-stack Task management application with user authentication, allowing users to create, view, complete, and delete tasks.
 
@@ -70,6 +70,7 @@ Git
 **Authentication**
 
 POST /api/auth/register - Register a new user
+
 POST /api/auth/login - Login a user
 
 # Tasks
