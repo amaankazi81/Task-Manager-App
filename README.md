@@ -21,7 +21,7 @@ Node.js (v14 or higher)
 MongoDB (local or Atlas)
 Git
 
-##Installation
+# Installation
 
 **Clone the repository:**
 
