@@ -4,7 +4,7 @@ A full-stack Task management application with user authentication, allowing user
 
 ## Features
 
-- **User authentication**: (register/login)
+- **User authentication**: (login)
 - **Task management**: (create, view, complete, delete)
 - **Responsive design**: for both desktop and mobile
 - Secure routes with **JWT authentication**
@@ -57,12 +57,17 @@ Git
 8. **Start the development server**
     ```bash
           npm start
+server will run on port 5000
 
 9. **Generate a JWT secret key:**
     ```bash
         node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
 
   Copy the output to your .env file as the JWT_SECRET value.
+
+10. **Manually Register a User:**
+    ```bash
+        curl -X POST http://localhost:5000/api/auth/register -H "Content-Type: application/json" -d '{"name":"Test User","email":"test@example.com","password":"password123"}'
   
 
 ## Authentication
@@ -117,6 +122,9 @@ frontend/ - React frontend, HTML, CSS and App Dashboad UI
 - Get your connection string
 
 - Add the connection string to your .env file
+
+**Frontend Demonstration** : https://task-manager-app-reqn-git-main-amaan-kazis-projects.vercel.app/login
+
 
 
 **License**
