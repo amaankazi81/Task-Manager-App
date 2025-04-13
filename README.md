@@ -37,6 +37,7 @@ Git
         npm install
 
 4. **Create .env file**
+   
     echo "PORT=5000
     MONGO_URI=your_mongodb_connection_string
     JWT_SECRET=your_jwt_secret_key" > .env
@@ -62,9 +63,11 @@ Git
         node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
 
   Copy the output to your .env file as the JWT_SECRET value.
-  API Endpoints
+  
 
-# Authentication
+# API Endpoints
+
+**Authentication
 
 POST /api/auth/register - Register a new user
 POST /api/auth/login - Login a user
@@ -78,24 +81,8 @@ DELETE /api/tasks/:id - Delete a task
 
 Folder Structure
 task-manager-app/
-├── backend/                # Node.js/Express backend
-│   ├── middleware/         # Authentication middleware
-│   ├── models/             # MongoDB schemas
-│   ├── routes/             # API routes
-│   ├── server.js           # Entry point
-│   └── .env                # Environment variables
-│
-├── frontend/               # React frontend
-│   ├── public/             # Static files
-│   ├── src/                
-│   │   ├── components/     # React components
-│   │   ├── context/        # Context API providers
-│   │   ├── App.js          # Main component
-│   │   ├── App.css         # Styles
-│   │   └── index.js        # Entry point
-│   └── package.json        # Dependencies
-│
-└── README.md               # Project documentation
+backend/ - Node.js/Express backend, Authentication middleware, MongoDB schemas, API routes, Entry point, Environment variables
+frontend/ - React frontend, HTML, CSS and App Dashboad UI
 
 
 # MongoDB Atlas Setup
@@ -107,5 +94,5 @@ Add your IP to the access list
 Get your connection string
 Add the connection string to your .env file
 
-License
-Distributed under the MIT License. See LICENSE for more information.
+**License**
+This project is licensed under the MIT License.
