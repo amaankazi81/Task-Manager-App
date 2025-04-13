@@ -65,14 +65,14 @@ Git
   Copy the output to your .env file as the JWT_SECRET value.
   
 
-**Authentication**
+# Authentication
 
 POST /api/auth/register - Register a new user
 
 POST /api/auth/login - Login a user
 
 
-**Tasks**
+# Tasks
 
 GET /api/tasks - Get all tasks for the logged-in user
 
@@ -83,7 +83,7 @@ PATCH /api/tasks/:id/complete - Mark a task as completed
 DELETE /api/tasks/:id - Delete a task
 
 
-**Folder Structure**
+# Folder Structure
 
 task-manager-app/
 
@@ -92,7 +92,7 @@ backend/ - Node.js/Express backend, Authentication middleware, MongoDB schemas, 
 frontend/ - React frontend, HTML, CSS and App Dashboad UI
 
 
-**MongoDB Atlas Setup**
+# MongoDB Atlas Setup
 
 Create a MongoDB Atlas account
 
