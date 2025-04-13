@@ -21,20 +21,20 @@ Node.js (v14 or higher)
 MongoDB (local or Atlas)
 Git
 
-# Installation
+## Installation
 
 1. **Clone the repository:**
-  ```bash
-  git clone https://github.com/amaankazi81/Task-Manager-App.git
-  cd task-manager-app
+    ```bash
+    git clone https://github.com/amaankazi81/Task-Manager-App.git
+    cd task-manager-app
 
 2. **Set up the backend:**
-  ```bash
-  cd backend
+   ```bash
+       cd backend
 
 3. **Install dependencies:**
   ```bash
-  npm install
+      npm install
 
 4. **Create .env file**
 echo "PORT=5000
@@ -43,23 +43,23 @@ JWT_SECRET=your_jwt_secret_key" > .env
 
 5. **Start the server:**
   ```bash
-  node server.js
+      node server.js
 
 6. **Set up the frontend:**
   ```bash
-  cd ../frontend
+      cd ../frontend
 
 7. **Install dependencies**
   ```bash
-  npm install
+      npm install
 
 8. **Start the development server**
   ```bash
-  npm start
+      npm start
 
 9. **Generate a JWT secret key:**
   ```bash
-  node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+      node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
 
   Copy the output to your .env file as the JWT_SECRET value.
   API Endpoints
