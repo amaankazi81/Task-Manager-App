@@ -37,10 +37,10 @@ Git
         npm install
 
 4. **Create .env file**
-   
-    echo "PORT=5000
-    MONGO_URI=your_mongodb_connection_string
-    JWT_SECRET=your_jwt_secret_key" > .env
+   ```bash
+        echo "PORT=5000
+        MONGO_URI=your_mongodb_connection_string
+        JWT_SECRET=your_jwt_secret_key" > .env
 
 5. **Start the server:**
    ```bash
@@ -67,7 +67,7 @@ Git
 
 # API Endpoints
 
-**Authentication
+**Authentication**
 
 POST /api/auth/register - Register a new user
 POST /api/auth/login - Login a user
@@ -75,23 +75,34 @@ POST /api/auth/login - Login a user
 # Tasks
 
 GET /api/tasks - Get all tasks for the logged-in user
+
 POST /api/tasks - Create a new task
+
 PATCH /api/tasks/:id/complete - Mark a task as completed
+
 DELETE /api/tasks/:id - Delete a task
 
-Folder Structure
+**Folder Structure**
+
 task-manager-app/
+
 backend/ - Node.js/Express backend, Authentication middleware, MongoDB schemas, API routes, Entry point, Environment variables
+
 frontend/ - React frontend, HTML, CSS and App Dashboad UI
 
 
 # MongoDB Atlas Setup
 
 Create a MongoDB Atlas account
+
 Set up a cluster
+
 Create a database user
+
 Add your IP to the access list
+
 Get your connection string
+
 Add the connection string to your .env file
 
 **License**
