@@ -119,7 +119,7 @@ The React frontend can be deployed to platforms like Netlify, Vercel, or GitHub 
 bash# Build for production
 npm run build
 
-# Deploy to Netlify (example)
+# Deploy to Netlify
 netlify deploy --prod
 Contributing
 
