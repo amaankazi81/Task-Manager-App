@@ -33,33 +33,33 @@ Git
        cd backend
 
 3. **Install dependencies:**
-  ```bash
-      npm install
+   ```bash
+        npm install
 
 4. **Create .env file**
-echo "PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key" > .env
+    echo "PORT=5000
+    MONGO_URI=your_mongodb_connection_string
+    JWT_SECRET=your_jwt_secret_key" > .env
 
 5. **Start the server:**
-  ```bash
-      node server.js
+   ```bash
+       node server.js
 
 6. **Set up the frontend:**
-  ```bash
-      cd ../frontend
+   ```bash
+       cd ../frontend
 
 7. **Install dependencies**
-  ```bash
-      npm install
+    ```bash
+        npm install
 
 8. **Start the development server**
-  ```bash
-      npm start
+    ```bash
+          npm start
 
 9. **Generate a JWT secret key:**
-  ```bash
-      node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+    ```bash
+        node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
 
   Copy the output to your .env file as the JWT_SECRET value.
   API Endpoints
