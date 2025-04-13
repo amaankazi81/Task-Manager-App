@@ -1,78 +1,79 @@
-Task Manager App
-A full-stack task management application with user authentication, allowing users to create, view, complete, and delete tasks.
+##Task Manager App
 
-Features
+A full-stack Task management application with user authentication, allowing users to create, view, complete, and delete tasks.
 
-User authentication (register/login)
-Task management (create, view, complete, delete)
-Responsive design for both desktop and mobile
-Secure routes with JWT authentication
+##Features
 
-Tech Stack
-Frontend
+- **User authentication**: (register/login)
+- **Task management**: (create, view, complete, delete)
+- **Responsive design**: for both desktop and mobile
+- Secure routes with **JWT authentication**
 
-React (with Hooks)
-React Router for navigation
-Context API for state management
-Modern CSS with Flexbox
+##Tech Stack
 
-Backend
+- **Frontend**: React (with Hooks), React Router for navigation, Context API for state management, Modern CSS with Flexbox
+- **Backend**: Node.js with Express.js, JWT for authentication, MongoDB for database
 
-Node.js with Express.js
-Alternative backend option with Python FastAPI
-JWT for authentication
-MongoDB for data storage
-
-Getting Started
-Prerequisites
+##Getting Started
+**Prerequisites**
 
 Node.js (v14 or higher)
 MongoDB (local or Atlas)
 Git
 
-Installation
+##Installation
 
-Clone the repository:
+**Clone the repository:**
 
-bashgit clone https://github.com/yourusername/task-manager-app.git
-cd task-manager-app
+  ```bash
+  git clone https://github.com/amaankazi81/Task-Manager-App.git
+  cd task-manager-app
 
-Set up the backend:
+**Set up the backend:**
 
-bashcd backend
+  ```bash
+  cd backend
 
-# Install dependencies
-npm install
+**Install dependencies:**
 
-# Create .env file
+  ```bash
+  npm install
+
+**Create .env file**
 echo "PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key" > .env
 
-# Start the server
-node server.js
+**Start the server:**
 
-Set up the frontend:
+  ```bash
+  node server.js
 
-bashcd ../frontend
+**Set up the frontend:**
 
-# Install dependencies
+  ```bash
+  cd ../frontend
+
+#Install dependencies
 npm install
 
-# Start the development server
+#Start the development server
 npm start
 
-Generate a JWT secret key:
+#Generate a JWT secret key:
 
-bashnode -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
-Copy the output to your .env file as the JWT_SECRET value.
-API Endpoints
-Authentication
+  ```bash
+  node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+
+  Copy the output to your .env file as the JWT_SECRET value.
+  API Endpoints
+
+**Authentication**
 
 POST /api/auth/register - Register a new user
 POST /api/auth/login - Login a user
 
-Tasks
+**Tasks**
 
 GET /api/tasks - Get all tasks for the logged-in user
 POST /api/tasks - Create a new task
@@ -99,7 +100,9 @@ task-manager-app/
 │   └── package.json        # Dependencies
 │
 └── README.md               # Project documentation
-MongoDB Atlas Setup
+
+
+#MongoDB Atlas Setup
 
 Create a MongoDB Atlas account
 Set up a cluster
@@ -108,20 +111,6 @@ Add your IP to the access list
 Get your connection string
 Add the connection string to your .env file
 
-Deployment
-Backend Deployment
-The backend can be deployed to platforms like Heroku, Render, or Railway.
-bash# Example for Heroku
-heroku create
-git push heroku main
-Frontend Deployment
-The React frontend can be deployed to platforms like Netlify, Vercel, or GitHub Pages.
-bash# Build for production
-npm run build
-
-# Deploy to Netlify
-netlify deploy --prod
-Contributing
 
 Fork the repository
 Create your feature branch (git checkout -b feature/amazing-feature)
