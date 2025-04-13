@@ -1,20 +1,20 @@
-##Task Manager App
+## Task Manager App
 
 A full-stack Task management application with user authentication, allowing users to create, view, complete, and delete tasks.
 
-##Features
+## Features
 
 - **User authentication**: (register/login)
 - **Task management**: (create, view, complete, delete)
 - **Responsive design**: for both desktop and mobile
 - Secure routes with **JWT authentication**
 
-##Tech Stack
+## Tech Stack
 
 - **Frontend**: React (with Hooks), React Router for navigation, Context API for state management, Modern CSS with Flexbox
 - **Backend**: Node.js with Express.js, JWT for authentication, MongoDB for database
 
-##Getting Started
+## Getting Started
 **Prerequisites**
 
 Node.js (v14 or higher)
@@ -102,7 +102,7 @@ task-manager-app/
 └── README.md               # Project documentation
 
 
-#MongoDB Atlas Setup
+# MongoDB Atlas Setup
 
 Create a MongoDB Atlas account
 Set up a cluster
