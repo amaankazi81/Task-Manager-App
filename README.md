@@ -73,7 +73,7 @@ POST /api/auth/register - Register a new user
 
 POST /api/auth/login - Login a user
 
-# Tasks
+**Tasks**
 
 GET /api/tasks - Get all tasks for the logged-in user
 
@@ -82,6 +82,7 @@ POST /api/tasks - Create a new task
 PATCH /api/tasks/:id/complete - Mark a task as completed
 
 DELETE /api/tasks/:id - Delete a task
+
 
 **Folder Structure**
 
@@ -92,7 +93,7 @@ backend/ - Node.js/Express backend, Authentication middleware, MongoDB schemas, 
 frontend/ - React frontend, HTML, CSS and App Dashboad UI
 
 
-# MongoDB Atlas Setup
+**MongoDB Atlas Setup**
 
 Create a MongoDB Atlas account
 
@@ -105,6 +106,7 @@ Add your IP to the access list
 Get your connection string
 
 Add the connection string to your .env file
+
 
 **License**
 This project is licensed under the MIT License.
