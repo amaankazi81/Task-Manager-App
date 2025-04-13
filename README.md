@@ -65,25 +65,37 @@ Git
   Copy the output to your .env file as the JWT_SECRET value.
   
 
-# Authentication
+## Authentication
 
 POST /api/auth/register - Register a new user
 
 POST /api/auth/login - Login a user
 
 
-# Tasks
+## Tasks
 
-GET /api/tasks - Get all tasks for the logged-in user
+**GET /api/tasks - Get all tasks for the logged-in user**
 
-POST /api/tasks - Create a new task
-
-PATCH /api/tasks/:id/complete - Mark a task as completed
-
-DELETE /api/tasks/:id - Delete a task
+![TM-1](https://github.com/user-attachments/assets/7f40050b-51b3-4d4a-a5f3-65f8947d81c6)
 
 
-# Folder Structure
+**POST /api/tasks - Create a new task**
+
+![TM-2](https://github.com/user-attachments/assets/368b17bd-5e25-4e2f-acb2-2cb987e73257)
+
+
+**PATCH /api/tasks/:id/complete - Mark a task as completed**
+
+![TM-3](https://github.com/user-attachments/assets/6441e265-d544-41e1-b1af-347136e2c326)
+
+
+**DELETE /api/tasks/:id - Delete a task**
+
+![Tm-4](https://github.com/user-attachments/assets/eee832bb-b2fa-4521-8698-6f5180111f51)
+
+
+
+## Folder Structure
 
 task-manager-app/
 
@@ -92,19 +104,19 @@ backend/ - Node.js/Express backend, Authentication middleware, MongoDB schemas, 
 frontend/ - React frontend, HTML, CSS and App Dashboad UI
 
 
-# MongoDB Atlas Setup
+## MongoDB Atlas Setup
 
-Create a MongoDB Atlas account
+- Create a MongoDB Atlas account
 
-Set up a cluster
+- Set up a cluster
 
-Create a database user
+- Create a database user
 
-Add your IP to the access list
+- Add your IP to the access list
 
-Get your connection string
+- Get your connection string
 
-Add the connection string to your .env file
+- Add the connection string to your .env file
 
 
 **License**
