@@ -23,57 +23,53 @@ Git
 
 # Installation
 
-**Clone the repository:**
-
+1. **Clone the repository:**
   ```bash
   git clone https://github.com/amaankazi81/Task-Manager-App.git
   cd task-manager-app
 
-**Set up the backend:**
-
+2. **Set up the backend:**
   ```bash
   cd backend
 
-**Install dependencies:**
-
+3. **Install dependencies:**
   ```bash
   npm install
 
-**Create .env file**
+4. **Create .env file**
 echo "PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key" > .env
 
-**Start the server:**
-
+5. **Start the server:**
   ```bash
   node server.js
 
-**Set up the frontend:**
-
+6. **Set up the frontend:**
   ```bash
   cd ../frontend
 
-#Install dependencies
-npm install
+7. **Install dependencies**
+  ```bash
+  npm install
 
-#Start the development server
-npm start
+8. **Start the development server**
+  ```bash
+  npm start
 
-#Generate a JWT secret key:
-
+9. **Generate a JWT secret key:**
   ```bash
   node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
 
   Copy the output to your .env file as the JWT_SECRET value.
   API Endpoints
 
-**Authentication**
+# Authentication
 
 POST /api/auth/register - Register a new user
 POST /api/auth/login - Login a user
 
-**Tasks**
+# Tasks
 
 GET /api/tasks - Get all tasks for the logged-in user
 POST /api/tasks - Create a new task
@@ -110,13 +106,6 @@ Create a database user
 Add your IP to the access list
 Get your connection string
 Add the connection string to your .env file
-
-
-Fork the repository
-Create your feature branch (git checkout -b feature/amazing-feature)
-Commit your changes (git commit -m 'Add some amazing feature')
-Push to the branch (git push origin feature/amazing-feature)
-Open a Pull Request
 
 License
 Distributed under the MIT License. See LICENSE for more information.
