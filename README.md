@@ -65,13 +65,12 @@ Git
   Copy the output to your .env file as the JWT_SECRET value.
   
 
-# API Endpoints
-
 **Authentication**
 
 POST /api/auth/register - Register a new user
 
 POST /api/auth/login - Login a user
+
 
 **Tasks**
 
